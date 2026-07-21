@@ -9,50 +9,150 @@
             font-family: Arial, Helvetica, sans-serif;
             
         }
+
         table{
-            width: 400px;
             border-collapse: collapse;
+            width: 600px;
+            height: 600px;
+            position: relative;
+
         }
-        td{
+
+        thead,tfoot{
+            background-color: rgb(34, 32, 32);
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(34, 32, 32);
+        }
+       
+        td,th{
             border: 1px solid black;
-            border-collapse: collapse;
+            padding: 8px;
+            width: 400px;
+            
+            text-align: center;
         }
-        tr.linha{
-            background-color: blue;
+
+        tr:nth-child(even){
+            background-color: lightgray;
         }
+
+        tr.titulo{
+            margin-bottom: 10px;
+        }
+        caption{
+            text-align: center;
+            background-color: lightgray;
+            padding: 10px;
+            width: 400px;
+        }
+    
     </style>
 </head>
 <body>
-    <h1>Minha primeira</h1>
-      <!--
-        Hierarquias de tabelas
-        Table
-          Table row(linha de tabela)
-            Table header(cabeçalho de tabela)
-            Table data(dado de tabela)
-        -->
+   
     <table>
-        <tr class="linha">
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-         <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-         <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
-         <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
-        </tr>
-    </table>
+         <caption>Número de habitantes por províncias</caption>
+        <thead>
+            <tr>
+                <th scope="colgroup">Província</th>
+                <th scope="colgroup">Habitantes</th>
+                <th scope="colgroup">% da população nacional</th>
+            </tr>
+        </thead>
 
+          <tfoot>
+              <tr scope="rowgroup" class="tfooter">
+                <th>Outras Restantes</th>
+                <td>~4.200.000</td>
+                <td>~11,6%</td>
+              </tr>
+          </tfoot>
+        
+         <tr>
+            <td>Luanda</td>
+            <td>8.816.297</td>
+            <td>24,1%</td>
+        </tr>
+
+         <tr>
+            <td>Huíla</td>
+            <td>3.294.420</td>
+            <td>9,0%</td>
+        </tr>
+
+         <tr>
+            <td>Bié</td>
+            <td>2.844.171</td>
+            <td>7,8%</td>
+        </tr>
+
+         <tr>
+            <td>Malanje</td>
+            <td>1.298.250</td>
+            <td>3,5%</td>
+         </tr>
+
+          <tr>
+            <td>Icolo e Bengo</td>
+            <td>1.523.457</td>
+            <td>4,2%</td>
+        </tr>
+
+         <tr>
+            <td>Cabinda</td>
+            <td>903.370</td>
+            <td>2,5%</td>
+         </tr>
+
+          <tr>
+            <td>Cunene</td>
+            <td>990.087</td>
+            <td>2,7%</td> 
+          </tr>
+
+            <tr>
+            <td>Lunda Sul</td>
+            <td>893.936</td>
+            <td>2,4%</td> 
+          </tr>
+
+            <tr>
+            <td>Lunda Norte</td>
+            <td>1.742.217</td>
+            <td>4,8%</td> 
+          </tr>
+
+           <tr>
+            <td>Uíge</td>
+            <td>2.196.280</td>
+            <td>6,0%</td> 
+          </tr>
+
+           <tr>
+            <td>Cuando</td>
+            <td>138.770</td>
+            <td>0,4%</td>
+          </tr>
+
+           <tr>
+            <td>Zaire</td>
+            <td>594.428</td>
+            <td>1,6%</td>
+            </tr>
+            
+           <tr>
+            <td>Namibe</td>
+            <td>495.326</td>
+            <td>1,4%</td>
+            </tr>
+            
+
+    </table>
+    
 </body>
 </html>
