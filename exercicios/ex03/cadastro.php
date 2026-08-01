@@ -1,0 +1,1 @@
+Os dados foram enviados, aprenda php pra processar e armazenar essas informações em um banco de dados. Certifique-se de validar os dados recebidos para evitar problemas de segurança, como injeção de SQL. Além disso, considere implementar medidas de segurança adicionais, como criptografia de senhas e uso de prepared statements.
