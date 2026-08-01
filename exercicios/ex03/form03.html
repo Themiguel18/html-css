@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meu Terceiro Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="usuario" id="inome" required minlength="5" maxlength="15" placeholder="nome do usuario" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="imes">Periodo letivo:</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+
+        <p>
+            <label for="idia">Dia da prova:</label>
+            <input type="date" name="dia" id="idia" required>
+        </p>
+
+        <p>
+            <label for="ihora">Hora</label>
+            <input type="time" name="hora" id="ihora" required>
+        </p>
+
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required min="1" max="10" step="0.5" placeholder="Digite a média">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
