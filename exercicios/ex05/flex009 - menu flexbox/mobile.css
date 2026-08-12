@@ -1,8 +1,23 @@
 @charset "UTF-8";
 
- menu > nav{
-    display: flex;
+header{
     flex-flow: column nowrap;
-    justify-content: flex-end;
-    align-items: flex-end;
 }
+
+header > h1{
+    flex-basis: 50px;
+    margin: 10px;
+    
+}
+
+ menu > nav{
+   
+    flex-flow: column nowrap;
+    justify-content: center;
+    
+}
+
+menu > nav > a{
+    width: 90vw;
+}
+
