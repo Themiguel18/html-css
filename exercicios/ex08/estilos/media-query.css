@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-body{
-    background-image: linear-gradient(to top, blueviolet, lightblue);
-}
-
 section{
-    background-image: linear-gradient(to top, lightblue, lightgrey);
-    margin-left: 90px;
-    margin-right: 90px;
+    width: 600px;
 }
