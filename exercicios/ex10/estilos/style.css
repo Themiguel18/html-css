@@ -5,75 +5,94 @@
     margin: 0px;
 }
 
-main{
-    background-image: url(../imagens/947726315347408380.jpg);
-    background-size: cover;
+body{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+    
 }
-
-div.container{
+header{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background-color: #ffffff3a;
-    max-height: 300px;
-    width: 600px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    box-shadow: 1px 1px 10px black;
-    padding: 50px;
-    transition: 0.3s;
+    background-color: black;
+    padding: 10px;
+    position: sticky;
     
 }
 
-
-div.container:hover{
-    background-color: #121D40;
-    transform: scale(1.0);
-}
-div.formulario{
-    margin-top: 10px;
-}
-
-div.formulario p{
-    margin-bottom: 15px;
-    font-weight: bold;
+menu nav ul{
+    display: flex;
+    gap: 10px;
 }
 
 
-input[type=email]:focus{
-    background-color: #405173;
-    margin-bottom: 5px;
-}
-
-input[type=password]:focus{
-    background-color: #405173;
-     margin-top: 5px;
-}
-
-button{
-    margin-top: 20px;
-    background-color: #9298A6;
-    width: 100%;
-    padding: 5px;
-    transition: .5s;
-    cursor: pointer;
-}
-
-button:hover{
-    transform: scale(1.1);
-}
-
-button a{
+menu nav ul li a{
     text-decoration: none;
     color: white;
 }
 
+
+
+section.banner{
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    
+}
+
+article.texto{
+    grid-row: 1 / -2;
+    margin: 50px;
+   text-align: justify;
+    
+}
+
+div.imagem {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: black;
+    background-image: url(../imagens/42784265206450215.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-left: 15px solid black;
+    transition:  transform .5s ease-in-out;
+
+}
+
+div.imagem:hover{
+    transform: scale(0.9);
+
+}
+
+div.imagem img{
+    width: 200px;
+    height: 200px;
+}
+
+li{
+    list-style: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    
+}
+
+footer div.contato ul li a{
+    text-decoration: none;
+    color: white;
+}
 
 
 
