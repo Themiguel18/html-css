@@ -5,66 +5,77 @@
     margin: 0px;
 }
 
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: linear-gradient(to top, lightblue, blueviolet);
-}
-
 main{
-    height: 100vh;
+    background-image: url(../imagens/947726315347408380.jpg);
+    background-size: cover;
     width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-div.card{
+div.container{
     display: flex;
-    gap: 20px;
-    
-   
-}
-
-div.produto img{
-  box-shadow: 3px 3px 10px black;
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 5px solid lightseagreen;
-  outline: 5px solid lightslategray;
-  display: block;
-  margin: auto;
-  margin: 10px;
-  
-}
-
-div.descricao{
-   margin-top: 100px;
-   margin-left: 15px;
-}
-
-section{
-    margin: 20px;
-}
-
-div.botao{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff3a;
+    max-height: 300px;
     width: 600px;
-    display: flex;
-    justify-content: flex-end;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px black;
+    padding: 50px;
+    transition: 0.3s;
+    
 }
 
- a{
-    list-style: none;
+
+div.container:hover{
+    background-color: #1C2B59;
+    transform: scale(1.0);
+}
+div.formulario{
+    margin-top: 10px;
+}
+
+div.formulario p{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+input[type=email]{
+    margin-bottom: 5px;
+}
+
+input[type=email]:focus{
+    background-color: #9298A6;
+}
+
+input[type=password]:focus{
+    background-color: #9298A6;
+}
+
+button{
+    margin-top: 20px;
+    background-color: #405173;
+    width: 100%;
+    padding: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button a{
+    text-decoration: none;
     color: white;
 }
-button{
-    background-color: lightslategray;
-    padding: 10px;
 
-}
 
-button i{
-    font-size: 1.5em;
-}
+
+
 
