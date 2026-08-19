@@ -1,99 +1,137 @@
 @charset "UTF-8";
 
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-   
-    
-}
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: black;
-    padding: 10px;
-    position: sticky;
-    
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
 }
 
-menu nav ul{
-    display: flex;
-    gap: 10px;
-}
+.login-container {
+    min-height: 100vh;
 
-
-menu nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-
-
-section.banner{
-    
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 5px;
-    
-}
-
-article.texto{
-    grid-row: 1 / -2;
-    margin: 50px;
-   text-align: justify;
-    
-}
-
-div.imagem {
     display: flex;
     justify-content: center;
+    align-items: center;
+
     padding: 20px;
-    background-color: black;
-    background-image: url(../imagens/42784265206450215.jpg);
-    background-size: cover;
-    box-sizing: border-box;
-    border-radius: 20px;
-    border-left: 15px solid black;
-    transition:  transform .5s ease-in-out;
-
 }
 
-div.imagem:hover{
-    transform: scale(0.9);
+.login-box {
+    width: 100%;
+    max-width: 400px;
 
+    background: white;
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-div.imagem img{
-    width: 200px;
-    height: 200px;
+/* Logo */
+
+.logo {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-li{
-    list-style: none;
+.logo h1 {
+    font-size: 30px;
 }
 
-footer{
+/* Título */
+
+h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Campos */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+.campo label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+/* Checkbox e link */
+
+.opcoes {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+.opcoes label {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.opcoes a {
+    text-decoration: none;
     
 }
 
-footer div.contato ul li a{
-    text-decoration: none;
+/* Botão */
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #222;
     color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: transform 0.2s;
 }
 
-
+button:hover {
+    transform: scale(0.97);
+}
 
 

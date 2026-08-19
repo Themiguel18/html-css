@@ -13,48 +13,67 @@
 </head>
 <body>
    <header>
-    <menu>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </menu>
-   </header>
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-   <main>
-    <section class="banner">
-        <article class="texto">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, ipsam, accusamus dolore quae vero quisquam harum architecto doloremque perspiciatis ab libero ipsum porro quia dignissimos ratione a? Porro, distinctio saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laborum deserunt nobis? Quibusdam voluptas eaque ducimus libero fuga maxime sunt, dicta ipsa consequatur, debitis fugit suscipit neque reprehenderit tempore explicabo.</p>
-        </article>
+<body>
 
-        <article class="foto">
-            <div class="imagem"><img src="imagens/Los_20_Mejores_Perfumes_De_Hombre_Para_El_Otoño-removebg-preview.png" alt=""></div>
-        </article>
-    </section>
+    <main class="login-container">
 
-   
-   </main>
-    <footer>
-        <div class="contato">
-            <ul>
-                <li><a href="#">947543352</a></li>
-                <li><a href="#">951665431</a></li>
-                <li><a href="#">923645899</a></li>
-                <li><a href="#">935467829</a></li>
-                <li><a href="#">873084649</a></li>
-            </ul>
+        <div class="login-box">
+
+            <!-- Logo -->
+            <div class="logo">
+                <h1>CM digital</h1>
+            </div>
+
+            <h2>Entrar</h2>
+            <p class="subtitulo">Acesse a sua conta</p>
+
+            <!-- Formulário -->
+            <form>
+
+                <!-- Email -->
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email"  id="email" placeholder="Digite o seu email"
+                        required
+                    >
+                </div>
+
+                <!-- Senha -->
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite a sua senha"
+                        required
+                    >
+                </div>
+
+                <!-- Checkbox -->
+                <div class="opcoes">
+                    <label>
+                        <input type="checkbox">
+                        Lembrar-me
+                    </label>
+
+                    <a href="#">Esqueci a senha</a>
+                </div>
+
+                <!-- Botão -->
+                <button type="submit">Entrar</button>
+
+            </form>
+
         </div>
 
-        <div class="redes">
-            <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Threads</li>
-            </ul>
-        </div>
-    </footer>
+    </main>
+
 </body>
 </html>
