@@ -1,3 +1,12 @@
 @charset "UTF-8";
 
 
+main{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.titulo p{
+   width: 227px;
+}
+
