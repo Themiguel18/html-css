@@ -14,8 +14,16 @@ body{
     background-size: cover;
 }
 
+
 header{
-    display: flex;
-    justify-content: space-between;
+    background-color: gray;
+    color: white;
+    
 }
+
+header > h1{
+    flex: 0 0 100px;
+    text-shadow: 2px 2px 3px black;
+}
+
 
