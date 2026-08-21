@@ -7,23 +7,111 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../imagens/fundo\ de\ madeira.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-
-header{
     background-color: gray;
+}
+header.container{
+   
+    background-color: lightslategray;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+   
     
 }
 
-header > h1{
-    flex: 0 0 100px;
-    text-shadow: 2px 2px 3px black;
+div.navegacao{
+    margin: 10px;
+    
 }
 
+div.navegacao nav{
+    display: flex;
+    gap: 10px;
+}
+
+div.navegacao a{
+    text-decoration: none;
+    color: white;
+}
+
+div.navegacao a:hover{
+    color: grey;
+}
+
+main{
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+section.imagem{
+    background-image: url(../imagens/prato\ 01.jpg);
+    background-attachment: fixed;
+    height: 400px;
+    padding: 30px;
+    width: 90vw;
+    margin-top: 20px;
+    
+    border: 2px solid black;
+    color: rgb(209, 204, 204);
+
+}
+
+section.texto{
+    background-image: url(../imagens/fundo\ chique.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    margin-top: 30px;
+    color: rgb(209, 204, 204);
+}
+
+section.frase{
+    display: flex;
+    flex-flow: row;
+    gap: 15px;
+    margin: 20px;
+}
+
+article{
+    text-align: justify;
+}
+
+section.final{
+    background-image: url(../imagens/prato\ 02.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    padding: 30px;
+    width: 90vw;
+    margin-top: 20px;
+  
+    border: 2px solid black;
+    color: rgb(209, 204, 204);
+}
+
+
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.514);   
+    margin-top: 20px;
+    height: 50px;
+}
 

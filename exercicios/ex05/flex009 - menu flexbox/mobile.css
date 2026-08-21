@@ -1,23 +1,5 @@
 @charset "UTF-8";
 
-header{
-    flex-flow: column nowrap;
+h1{
+    color: red;
 }
-
-header > h1{
-    flex-basis: 50px;
-    margin: 10px;
-    
-}
-
- menu > nav{
-   
-    flex-flow: column nowrap;
-    justify-content: center;
-    
-}
-
-menu > nav > a{
-    width: 90vw;
-}
-
