@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+section.container div.imagem-texto{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
