@@ -50,11 +50,24 @@ section.container div.topo a{
     text-decoration: none;
     color: white;
    margin: 20px;
+   position: relative;
 }
 
-section.container div.topo a:hover{
-    color: var(--fundo-principal);
+section.container div.topo a::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: var(--fundo-principal);
+    transition: width 0.3s ease;
 }
+
+section.container div.topo a:hover::after{
+    width: 90%;
+}
+
 
 section.container div.imagem-texto{
     display: flex;
@@ -128,6 +141,7 @@ div.baixo div.icone a{
 
 section.container div.icone a:hover{
     color: var(--fundo-principal);
+    
 }
 
 h2{
