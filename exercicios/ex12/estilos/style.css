@@ -25,10 +25,11 @@ main{
 
 section.container{
     background-color: var(--fundo-card);
-    width: 90vw;
-    height: 70vh;
+    width: 500px;
+    height: 600px;
     color: white;
     box-shadow: 2px 2px 12px black;
+    overflow: hidden;
 }
 
 section.container div.icone{
@@ -94,7 +95,10 @@ section.container div.texto p{
 }
 
 section.container div.imagem{
-    align-self: center;
+    width: 100px;
+    height: 100px;
+    
+   
 }
 
 section.container div.texto button{
@@ -120,7 +124,7 @@ div.baixo{
 }
 
 div.baixo div.phones{
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     gap: 5px;
     margin-top: 10px;
@@ -129,6 +133,11 @@ div.baixo div.phones{
 div.baixo p{
     align-self: center;
     font-size: .8em;
+}
+
+div.baixo div.icone{
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 div.baixo div.icone a{
@@ -146,5 +155,9 @@ section.container div.icone a:hover{
 h2{
     text-align: center;
     margin-top: 20px;
+}
+
+hr{
+    display: none;
 }
 
