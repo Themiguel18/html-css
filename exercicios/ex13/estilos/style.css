@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --fundo-principal: #A62929;
+  --texto: #D9B1A3;
+  --texto-inverso: #F24B4B;
+  --destaque: #593636;
+  --fundo-card: #0D0D0D;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--fundo-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container{
+    background-color: var(--fundo-card);
+    width: 500px;
+    height: 600px;
+    color: white;
+    box-shadow: 2px 2px 12px black;
+    overflow: hidden;
+}
+
+section.container div.icone{
+    font-size: 10px;
+    margin: 10px;
+}
+
+section.container div.topo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+section.container div.topo a{
+    text-decoration: none;
+    color: white;
+   margin: 20px;
+   position: relative;
+}
+
+section.container div.topo a::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: var(--fundo-principal);
+    transition: width 0.3s ease;
+}
+
+section.container div.topo a:hover::after{
+    width: 90%;
+}
+
+
+section.container div.imagem-texto{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.container div.texto{
+    font-size: .5em;
+    flex: 0 0 150px;
+    margin: 20px;
+    height: 200px;   
+}
+
+section.container div.texto h1{
+    font-size: 4em;
+
+    
+}
+section.container div.texto p{
+    margin-top: 5px;
+    
+}
+
+section.container div.imagem{
+    width: 100px;
+    height: 100px;
+    
+   
+}
+
+section.container div.texto button{
+    padding: 10px;
+    padding-right: 20px;
+    background-color: var(--texto-inverso);
+    margin-top: 25px;
+}
+
+section.container div.texto button a{
+    text-decoration: none;
+    color: white;
+}
+
+section.container hr{
+    margin-top: 20px;
+    
+}
+
+div.baixo{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.baixo div.phones{
+    display: none;
+    flex-flow: row wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+div.baixo p{
+    align-self: center;
+    font-size: .8em;
+}
+
+div.baixo div.icone{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.baixo div.icone a{
+    margin: 10px;
+    font-size: 2em;
+    color: white;
+   
+}
+
+section.container div.icone a:hover{
+    color: var(--fundo-principal);
+    
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+hr{
+    display: none;
+}
+
