@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+main{
+    background-color: teal;
+}
+
+section.galeria{
+    grid-auto-flow: column;
+    width: 80%;
+}

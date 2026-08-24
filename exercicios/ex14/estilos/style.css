@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: violet;
+}
+
+
+
+section.galeria{
+    width: 416px;
+    height: 510px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    margin-top: 20px;
+    
+}
+
+div.item1{
+    background-image: url(../imagens/PELE.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+div.item2{
+    background-image: url(../imagens/204702745558727623.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+div.item3{
+    background-image: url(../imagens/2462974792464152.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+div.item4{
+    background-image: url(../imagens/285626801363579253.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+div.item5{
+    background-image: url(../imagens/Neymar.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+div.item6{
+    background-image: url(../imagens/Neymar\ jr\ Seleção\ Copa\ do\ Mundo\ 2022.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+div.item7{
+    background-image: url(../imagens/Soccer\ is\ Life_.jpg);
+    background-position: center right;
+    background-size: cover;
+    padding: 30px;
+}
+div.item8{
+    background-image: url(../imagens/Kylian\ mbappe\ for\ france\ nasional\ team\ in\ world….jpeg);
+    background-position: calc() center;
+    background-size: cover;
+    padding: 30px;
+}
+div.item9{
+    background-image: url(../imagens/Instagram.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item10{
+    background-image: url(../imagens/alexandre\ pato.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item11{
+    background-image: url(../imagens/jamal\ musiala.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item12{
+    background-image: url(../imagens/FIFA\ World\ Cup\ 2014_\ Brazil\ vs\ Croatia\ First\ Match\ in\ Pictures.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item13{
+    background-image: url(../imagens/39688040462057467.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item14{
+    background-image: url(../imagens/Adriano🇧🇷.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item15{
+    background-image: url(../imagens/14284923813831317.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item16{
+    background-image: url(../imagens/140806231872284.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item17{
+    background-image: url(../imagens/B_R\ Football\ on\ Twitter\ in\ 2022\ _\ Trent….jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item18{
+    background-image: url(../imagens/Jetez\ un\ œil\ à\ cette\ image.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item19{
+    background-image: url(../imagens/Leyenda\ 10\ Maradona.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item20{
+    background-image: url(../imagens/Kaká.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+div.item21{
+    background-image: url(../imagens/El\ día\ que\ un\ compañero\ hizo\ llorar\ a\ Cristiano\ Ronaldo\ -\ TyC\ Sports.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
