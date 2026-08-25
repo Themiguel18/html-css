@@ -65,7 +65,7 @@ section.hero{
 }
 
 section.hero div.texto{
-    border: 1px dashed black;
+    
     flex: 0 0 200px;
 }
 
@@ -73,9 +73,7 @@ section.hero div.texto p{
     margin-top: 20px;
 }
 
-section.hero div.imagem{
-    border: 1px dashed black;
-}
+
 
 h1#servicos{
     text-align: center;
@@ -157,7 +155,7 @@ section.moda div#texto{
 
 div#texto div.texto01{
     flex: 0 0 250px;
-    border: 1px dashed black;
+    
 }
 
 div.texto01 h3{
@@ -167,7 +165,7 @@ div.texto01 h3{
 div#texto div.texto02{
     flex-basis: 300px;
     flex-shrink: 1;
-    border: 1px dashed black;
+
 }
 
 div.botao{
