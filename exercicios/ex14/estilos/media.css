@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 
-
 aside.lateral{
     width: 100px;
 
@@ -9,8 +8,8 @@ aside.lateral{
 
 section.hero{
     height: 300px;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-right: 20px;
 }
 
@@ -30,6 +29,17 @@ section.moda div#texto{
 div#texto p{
     border: 1px dashed black;
     flex: 0 0 100px;
+}
+
+section.cards{
+    flex-flow: column nowrap;
+}
+
+section.cards div{
+    background-color: black;
+    color: silver;
+    width: 100px;
+    height: 100px;
 }
 
 section.moda div.botao{
