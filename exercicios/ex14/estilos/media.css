@@ -1,12 +1,7 @@
 @charset "UTF-8";
 
 
-main{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
+
 aside.lateral{
     width: 100px;
 
