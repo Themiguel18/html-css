@@ -1,1 +1,54 @@
 @charset "UTF-8";
+
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+aside.lateral{
+    width: 100px;
+
+}
+
+section.hero{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+div.texto{
+    text-align: center;
+}
+
+div.imagem{
+   display: none;
+}
+
+section.moda div#texto{
+    flex-flow: column nowrap;
+    margin-right: 10px;
+}
+
+div#texto p{
+    border: 1px dashed black;
+    flex: 0 0 100px;
+}
+
+section.moda div.botao{
+    flex-flow: column nowrap;
+    gap: 15px;
+}
+
+
+section.moda article{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+   
+}

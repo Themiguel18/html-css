@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+    color: white;
+}
+
 aside.lateral{
     width: 150px;
     height: 100vh;
@@ -16,6 +21,10 @@ aside.lateral{
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 aside.lateral nav{
@@ -66,6 +75,10 @@ section.hero div.texto p{
 
 section.hero div.imagem{
     border: 1px dashed black;
+}
+
+h1#servicos{
+    text-align: center;
 }
 
 section.cards{
@@ -130,6 +143,73 @@ section.cards div.card03{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+
+section.moda div#texto{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+div#texto div.texto01{
+    flex: 0 0 250px;
+    border: 1px dashed black;
+}
+
+div.texto01 h3{
+    color: #F23A29;
+}
+
+div#texto div.texto02{
+    flex-basis: 300px;
+    flex-shrink: 1;
+    border: 1px dashed black;
+}
+
+div.botao{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div.texto02 p.transparente{
+    color: rgba(128, 128, 128, 0.493);
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #F2522E;
+    color: white;
+}
+
+
+section.moda article{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+article div{
+    width: 200px;
+    height: 100px;
+}
+
+article div.foto01 img{
+    border-radius: 20px;
+}
+
+article div.foto02 img{
+    border-radius: 20px;
+}
+
+article div.foto03 img{
+    border-radius: 20px;
 }
 
 
