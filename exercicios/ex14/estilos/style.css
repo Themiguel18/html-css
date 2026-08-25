@@ -31,14 +31,105 @@ aside.lateral a {
 }
 
 aside.lateral a:hover{
-    color: tan;
+    color: blue;
+}
+
+main{
+    margin-left: 170px;
+    
 }
 
 section.hero{
     height: 400px;
-    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    background-image: url(../imagens/Baixar\ design\ de\ plano\ de\ fundo\ para\ power\ point\ adequado\ para\ fundo\ de\ ppt\ panda\ gratuitamente.jpeg);
+    background-position: center right;
+    background-size: cover;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-main{
-    margin-left: 250px;
+section.hero div.texto{
+    border: 1px dashed black;
+    flex: 0 0 200px;
 }
+
+section.hero div.texto p{
+    margin-top: 20px;
+}
+
+section.hero div.imagem{
+    border: 1px dashed black;
+}
+
+section.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+section.cards div{
+    background-color: black;
+    color: silver;
+    width: 300px;
+    height: 200px;
+}
+
+section.cards div.card01{
+    background-image: url(../imagens/mecânica.jpeg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.cards div h1{
+    opacity: 0;
+    transition: opacity .5s;
+    transition: transform 0.1s;
+}
+
+section.cards div h1:hover{
+    opacity: 1;
+    transform: scale(0.9);
+
+}
+
+section.cards div{
+    transition: transform 0.1s ease;
+}
+
+section.cards div:hover{
+    transform: scale(0.9);
+
+}
+
+section.cards div.card02{
+    background-image: url(../imagens/Electricidade.jpeg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.cards div.card03{
+    background-image: url(../imagens/Redes.jpeg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
