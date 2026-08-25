@@ -7,3 +7,38 @@
     box-sizing: border-box;
 }
 
+aside.lateral{
+    width: 150px;
+    height: 100vh;
+    background-color: silver;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+aside.lateral nav{
+     display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+}
+
+aside.lateral a {
+    font-size: 1.5em;
+    color: white;
+    transition: color .5s;
+}
+
+aside.lateral a:hover{
+    color: tan;
+}
+
+section.hero{
+    height: 400px;
+    width: 50%;
+}
+
+main{
+    margin-left: 250px;
+}
