@@ -9,24 +9,25 @@
 body{
     background-color: black;
 }
-
-header{
-    height: 400px;
+header {
+    min-height: 400px;
     width: 100%;
     background-color: black;
-    color: white;
     background-image: url(../imagens/moda07.jpeg);
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
+
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
+
     position: relative;
     z-index: 2;
 }
-
 header div.container{
     display: flex;
     justify-content: space-between;
