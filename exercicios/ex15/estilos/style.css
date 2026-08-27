@@ -8,39 +8,94 @@
 
 header{
     height: 400px;
+    width: 100%;
     background-color: black;
     color: white;
     background-image: url(../imagens/moda07.jpeg);
     background-position: center center;
     background-size: cover;
     border-bottom-left-radius: 50px;
-     border-bottom-right-radius: 50px;
-     display: flex;
-     flex-flow: column nowrap;
-     gap: 20px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 header div.container{
     display: flex;
     justify-content: space-between;
-    
     padding: 10px;
-  
+}
+
+div.container nav{
+    display: flex;
+    gap: 20px;
+}
+
+div.container nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.61);
 }
 header div.container02{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    gap: 30px;
-    margin-top: 20px;
 }
 
 div.container02 div.right{
-    margin-top: 60px;
+    margin-top: 65px;
 }
 
 div.container02 div.right p.fusco{
     margin-top: 20px;
+    color: rgba(255, 255, 255, 0.486);
 }
+
+div.container03{
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+div.container03 div{
+     flex: 0 0 auto;
+}
+
+div.container03 div#item01{
+    text-align: center;
+    
+}
+div#item01 p{
+    color: salmon;
+}
+
+div.container03 div#item02{
+    text-align: center;
+}
+div#item02 p{
+    color: salmon;
+}
+
+div.container03 div#item03{
+    text-align: center;
+}
+div#item03 p{
+    color: salmon;
+}
+
+div.container03 div#item04{
+    text-align: center;
+}
+div#item04 p{
+    color: salmon;
+}
+
+
+
 
