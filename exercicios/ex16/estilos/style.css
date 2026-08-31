@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor01: #A67C63;
+    --cor02: #BFA18F;
+    --cor03: #F2EEEB;
+    --cor04: #592A19;
+    --cor05: #0D0D0D;
+    --font01: "Poppins", sans-serif;
+    --font02: "Cormorant Garamond", serif;
+    --font03: "Playfair Display", serif;
+}
+
+body{
+    background-color: var(--cor03);
+}
+
+/* estilo do header */
+
+header{
+    padding: 0px 20px;
+    background-color: var(--cor01);
+    box-shadow: 0 0 8px black;
+    position: static;
+}
+
+header div.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+header .menu menu nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header .menu menu nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--cor03);
+    font-family: var(--font02);
+    transition: .3s;
+}
+
+header .menu menu nav ul li a:hover{
+    transform: scale(1.1);
+}
+
+/* estilo section titulo */
+
+section.titulo{
+    margin: 90px 30px;
+}
+
+
+.titulo p{
+    font-family: var(--font03);
+    font-size: 1em;
+}
+
+.titulo h1{
+    margin-top: 15px;
+    font-family: var(--font01);
+    font-weight: 300;
+}
+
+.titulo h1 span{ 
+    font-weight: 700;
+    display: block;
+}
+
+.titulo article{
+    height: 450px;
+    width: 90vw;
+    margin: 20px auto;
+    background-image: url(../imagens/download\ \(1\).jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    
+}
+
+/* section.diversos */
+
+section.diversos{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    font-family: var(--font02);
+    margin-top: 90px;
+    background-color: var(--cor02);
+    padding: 99px 5px;
+}
+
+div.container{
+    display: flex;
+    align-items: center;
+    margin-left: 99px;
+    gap: 15px;
+}
+
+.diversos h1{
+    font-family: var(--font01);
+    font-weight: 300;
+}
+
+
+section.diversos  h3{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+section.diversos  span{
+    font-weight: 900;
+}
+
+
+.diversos .moda1 .moda1-txt p{
+    text-align: start;
+    line-height: 15px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.diversos .moda1 .moda1-imagem{
+    border: 1px solid black;
+    background-image: url(../imagens/streetwear02.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+    width: 250px;
+    height: 400px;
+}
+
+.diversos .moda2 .moda2-txt p{
+    text-align: start;
+    line-height: 15px;
+    margin-top: 10px;
+    width: 200px;
+}
+.diversos .moda2 .moda2-imagem{
+    border: 1px solid black;
+    background-image: url(../imagens/streetwear03.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 250px;
+    height: 400px;
+}
+
+.diversos .moda3 .moda3-txt p{
+    text-align: start;
+    line-height: 15px;
+    margin-top: 10px;
+    width: 200px;
+}
+.diversos .moda3 .moda3-imagem{
+    border: 1px solid black;
+    background-image: url(../imagens/streetwear01.jpg);
+    background-position: center center;
+    background-size: cover;
+  
+    width: 250px;
+    height: 400px;
+}
+
+/* seccao web-txt */
+
+section.web-txt{
+    padding: 20px 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+div.web-txt-frases{
+    width: 320px;
+}
+
+.web-txt h1{
+    margin-bottom: 15px;
+    font-family: var(--font01);
+}
+
+.web-txt h3{
+    margin-bottom: 10px;
+    font-family: var(--font02);
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.web-txt p{
+    font-family: var(--font02);
+    text-align: justify;
+    width: 500px;
+}
+
+.web-txt button{
+    width: 100px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid var(--cor01);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.web-txt button:hover{
+    background-color: var(--cor01);
+    
+}
+
+.web-txt button a{
+    text-decoration: none;
+    color: var(--cor04);
+    font-family: var(--font03);
+}
+
+.web-txt button a:hover{
+    color: var(--cor03);
+}
+
+/* estilo section produtos */
+
+section.produtos{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    padding: 60px 0;
+    background-color: var(--cor02);
+    font-family: var(--font02);
+    font-size: .9em;
+}
+
+.produtos div{
+    width: 250px;
+    height: 200px;
+    background-color: black;
+    border: 1px solid var(--cor05);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.produtos div div.tenis{
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: var(--font01);
+}
+
+
+.produtos div.produto01{
+    background-image: url(../imagens/Adidas\ StanSmith.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.produtos div.produto02{
+    background-image: url(../imagens/relogio\ H1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.produtos div.produto03{
+    background-image: url(../imagens/pulove.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.produtos div.produto04{
+    background-image: url(../imagens/camisa\ barcelona.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
