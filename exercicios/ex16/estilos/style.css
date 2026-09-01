@@ -27,7 +27,11 @@ header{
     padding: 0px 20px;
     background-color: var(--cor01);
     box-shadow: 0 0 8px black;
-    position: static;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 header div.menu{
@@ -76,6 +80,7 @@ section.titulo{
 .titulo h1 span{ 
     font-weight: 700;
     display: block;
+    color: var(--cor01);
 }
 
 .titulo article{
@@ -108,7 +113,7 @@ div.container{
     display: flex;
     align-items: center;
     margin-left: 99px;
-    gap: 15px;
+    gap: 25px;
 }
 
 .diversos h1{
@@ -240,7 +245,7 @@ section.produtos{
     align-items: center;
     justify-content: space-evenly;
     margin: 10px auto;
-    padding: 60px 0;
+    padding: 100px 0;
     background-color: var(--cor02);
     font-family: var(--font02);
     font-size: .9em;
@@ -286,5 +291,68 @@ section.produtos{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* estilo section info */
+
+section.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+
+.info h1{
+    font-family: var(--font01);
+    font-weight: 300;
+}
+
+.info h1 span{
+    font-weight: 900;
+    color: var(--cor01);
+}
+
+.info div.info-botao{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.info div.info-botao button{
+    width: 250px;
+    height: 50px;
+    padding: 0 20px;
+    background-color: transparent;
+    border: 1px solid var(--cor01);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font03);
+
+    transition: .3s;
+}
+
+
+
+.info div.info-botao button:hover{
+    background-color: var(--cor01);
+    color: var(--cor03);
+    transform: scale(1.1);
+}
+
+/* footer */
+
+footer{
+    background-color: var(--cor01);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font02);
+    color: var(--cor03);
+}
+
+
+
+
 
 

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1087px){
+    body{
+        background-color: red;
+    }
+
+
+    
+/* section.diversos */
+
+section.diversos{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items:flex-end; 
+}
+
+div.container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+
+    /* seccao web-txt */
+
+
+
+.web-txt p{
+    font-size: 1em;
+    font-family: var(--font01);
+    font-weight: 300;
+}
+
+#web-txt-imagem{
+    display: none;
+}
+
+
+
+/* seccao produtos */
+
+
+
+
+section.produtos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 20px;
+    padding: 100px 20px;
+}
+
+
+
+    
+}
+
+@media screen and (max-width: 580px){
+
+    /* estilo section titulo */
+
+.titulo article{
+    height: 300px;
+    width: 80vw;
+    
+}
+
+ /* seccao web-txt */
+
+
+
+.web-txt p{
+    font-size: 1em;
+    font-family: var(--font01);
+    font-weight: 300;
+    width: 295px;
+}
+
+#web-txt-imagem{
+    display: none;
+}
+
+
+
+   /* seccao produtos */
+
+
+section.produtos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    padding: 20px;
+    padding: 100px 20px;
+}
+
+.produtos h1{
+    font-size: 1em;
+}
+
+.produtos div{
+    width: 150px;
+    height: 150px;
+   
+
+}
+
+/* estilo section info */
+
+
+
+.info h1{
+    
+    font-size: 1.5em;
+}
+
+
+
+.info div.info-botao button{
+    width: 200px;
+}
+
+
+
+}
