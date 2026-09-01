@@ -1,1 +1,109 @@
 @charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --cor01: #A67C63;
+    --cor02: #BFA18F;
+    --cor03: #F2EEEB;
+    --cor04: #592A19;
+    --cor05: #0D0D0D;
+    --font01: "Poppins", sans-serif;
+    --font02: "Cormorant Garamond", serif;
+    --font03: "Playfair Display", serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+div.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+ a{
+    text-decoration: none;
+    color: var(--cor05);
+    font-family: var(--font01);
+    font-size: 1.2rem;
+    margin-left: 1rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+ a:hover{
+    color: var(--cor01);
+}
+
+/* estilo header */
+
+header div.interface{
+    display:flex;
+   align-items: baseline;
+    justify-content: space-between;
+} 
+
+header .interface .no-image{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
+    width: 70%;
+}
+
+
+header .interface .no-image h1{
+    font-family: var(--font01);
+   
+}
+
+header .interface .no-image-menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .interface .no-image-menu nav ul li{
+    display: inline-block;
+}
+
+header .interface .no-image-txt{
+    margin-top: 30px;
+}
+
+header .interface .no-image-txt h1{
+    font-family: var(--font01);
+    font-size: 4.5rem;
+    line-height: 60px;
+    margin-top: 15px;
+}
+
+header .interface .no-image-txt h4{
+    color: var(--cor01);
+}
+
+header .interface .no-image-txt h4 span{
+    border-bottom: 1px solid var(--cor01);
+}
+
+header .interface .no-image-txt h1 span{
+    display: block;
+    color: var(--cor01);
+}
+
+header .interface .no-image-txt .no-image-txt-drop{
+    width: 45%;
+    text-align: center;
+    margin-top: 30px;
+    border-left: 1px solid var(--cor01);
+    border-right: 1px solid var(--cor01);
+}
+
+
