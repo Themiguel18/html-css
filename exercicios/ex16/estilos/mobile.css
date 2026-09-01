@@ -11,14 +11,15 @@ section.diversos{
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    align-items:flex-end; 
+    align-items: center; 
 }
 
 div.container{
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: flex-start;
     gap: 25px;
+    width: 100%;
 }
 
 
@@ -109,7 +110,10 @@ section.produtos{
 
 /* estilo section info */
 
-
+.info{
+   margin-left: 20px;
+   margin-right: 20px;
+}
 
 .info h1{
     
