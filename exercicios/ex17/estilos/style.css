@@ -18,9 +18,8 @@
 
 header{
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 80px;
+    z-index: 1000;
 }
 
 div.interface{
@@ -47,8 +46,10 @@ div.interface{
 
 header div.interface{
     display:flex;
-   align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
+    gap: 20px;
+    
 } 
 
 header .interface .no-image{
@@ -136,6 +137,265 @@ header .interface .no-image-txt button:hover{
     color: var(--cor03);
 }
 
+header .interface .header-icone{
+    
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
 
+header .interface .header-icone a{
+    margin: 10px 0;
+}
 
+header .interface .header-icone img{
+   margin-right: 30px;
+   margin-bottom: -4px;
+   padding: 0 20px;
+}
 
+/* estilo main */
+
+main{
+    position: relative;
+    margin-top: 400px;
+}
+
+section.fogo{
+    background-color: var(--cor03);
+    padding: 20px 0;
+}
+
+section.fogo .fogo-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section.fogo div{
+    border-right: 1px solid var(--cor01);
+   
+}
+
+section.fogo div#fogo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+section.fogo div#fogo1 h4{
+    font-size: .7em;
+    font-weight: 300;
+    font-family: var(--font01);
+    padding-right: 20px;
+}
+
+section.fogo div#fogo1 h4 span{
+    font-weight: 600;
+    display: block;
+}
+
+section.fogo div#fogo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+section.fogo div#fogo2 h4{
+    font-size: .7em;
+    font-weight: 300;
+    font-family: var(--font01);
+    padding-right: 20px;
+}
+
+section.fogo div#fogo2 h4 span{
+    font-weight: 600;
+    display: block;
+}
+
+section.fogo div#fogo3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+section.fogo div#fogo3 h4{
+    font-size: .7em;
+    font-weight: 300;
+    font-family: var(--font01);
+    padding-right: 20px;
+}
+
+section.fogo div#fogo3 h4 span{
+    font-weight: 600;
+    display: block;
+}
+
+section.fogo div#fogo4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+section.fogo div#fogo4 h4{
+    font-size: .7em;
+    font-weight: 300;
+    font-family: var(--font01);
+    padding-right: 20px;
+}
+
+section.fogo div#fogo4 h4 span{
+    font-weight: 600;
+    display: block;
+}
+
+/* estitlo produtos */
+
+section.produtos .interface div.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.produtos .container .container1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 260px;
+    background-color: var(--cor03);
+}
+
+.produtos .container1 .container-imagem{
+    border-bottom: 1px solid var(--cor01);
+}
+
+.produtos .container .container1 .container-txt{
+    font-family: var(--font02);
+    padding-top: 10px;
+}
+
+.produtos .container .container1 .container-txt p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.produtos .container .container2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 260px;
+    background-color: var(--cor03);
+}
+
+.produtos .container2 .container2-imagem{
+    border-bottom: 1px solid var(--cor01);
+}
+
+.produtos .container .container2 .container2-txt{
+    font-family: var(--font02);
+    padding-top: 10px;
+}
+
+.produtos .container .container2 .container2-txt p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.produtos .container .container3{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 260px;
+    background-color: var(--cor03);
+}
+
+.produtos .container3 .container3-imagem{
+    border-bottom: 1px solid var(--cor01);
+}
+
+.produtos .container .container3 .container3-txt{
+    font-family: var(--font02);
+    padding-top: 10px;
+}
+
+.produtos .container .container3 .container3-txt p{
+    font-size: 1.5em;
+    text-align: center;
+}
+.produtos .container .container4{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 260px;
+    background-color: var(--cor03);
+}
+
+.produtos .container4 .container4-imagem{
+    border-bottom: 1px solid var(--cor01);
+}
+
+.produtos .container .container4 .container4-txt{
+    font-family: var(--font02);
+    padding-top: 10px;
+}
+
+.produtos .container .container4 .container4-txt p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* estilo anuncio */
+
+section.anuncio .interface{
+    padding: 40px 0;
+}
+
+section.anuncio .interface div.container-anuncio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface .container-anuncio div{
+   
+   
+}
+
+.interface .container-anuncio div.anuncio1{
+    background-color: #0d0d0dc9;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-family: var(--font01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 90px;
+}
+.interface .container-anuncio div.anuncio2{
+    background-color: var(--cor02);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: var(--font01);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 90px;
+}
