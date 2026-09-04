@@ -395,3 +395,14 @@ section.anuncio .interface div.container-anuncio{
     gap: 15px;
     padding: 30px 90px;
 }
+
+/* estilo linha */
+
+section.linha .interface div.linha-container{
+    font-family: var(--font01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+}
