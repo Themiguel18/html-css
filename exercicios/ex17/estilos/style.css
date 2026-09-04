@@ -406,3 +406,10 @@ section.linha .interface div.linha-container{
     gap: 5px;
     padding: 10px 0;
 }
+
+section.linha .interface div.linha-container div.linha{
+    border-bottom: 2px solid black;
+    height: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
