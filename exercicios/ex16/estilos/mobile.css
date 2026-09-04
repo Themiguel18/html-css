@@ -9,14 +9,15 @@
 
 section.diversos{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-content: center;
     align-items: center; 
 }
 
 div.container{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
+    align-content: center;
     align-items: flex-start;
     gap: 25px;
     width: 100%;
@@ -47,11 +48,62 @@ div.container{
 
 
 section.produtos{
-    display: grid;
+    display: flex;
+    flex-flow: column nowrap;
     grid-template-columns: repeat(2, 1fr);
     gap: 35px;
     padding: 20px;
     padding: 100px 20px;
+}
+
+/* estilo section info */
+
+section.info{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 0;
+}
+
+.info h1{
+    font-family: var(--font01);
+    font-weight: 300;
+}
+
+.info h1 span{
+    font-weight: 900;
+    color: var(--cor01);
+}
+
+.info div.info-botao{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.info div.info-botao button{
+    width: 250px;
+    height: 50px;
+    padding: 0 20px;
+    background-color: transparent;
+    border: 1px solid var(--cor01);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font03);
+
+    transition: .3s;
+}
+
+
+
+.info div.info-botao button:hover{
+    background-color: var(--cor01);
+    color: var(--cor03);
+    transform: scale(1.1);
 }
 
 
