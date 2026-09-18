@@ -4,6 +4,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+div.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+body, html{
+    background-color: black;
 }
 
 
@@ -15,11 +27,6 @@ header{
     color: white;
 }
 
- header div.interface{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 4%;
-}
 
 header div.interface div.header{
     display: flex;
@@ -43,4 +50,51 @@ header div.interface div.header{
     background-color: rgb(192, 192, 8);
     border: none;
     color: black;
+}
+
+/* main */
+
+main .interface section.design{
+    border-bottom: 1px solid rgb(112, 110, 110);
+    padding: 10px;
+    color: white;
+}
+
+main .interface section.design p{
+    color: yellow;
+}
+
+.interface .design h1 span{
+    display: block;
+}
+
+main section.about{
+    padding-top: 20px;
+    color: white;
+    border-bottom: 1px solid rgb(112, 110, 110);
+    
+}
+
+main section.about p.icon{
+    padding-top: 30px;
+    padding-bottom: 150px;
+    color: rgb(95, 93, 93);
+}
+
+main section.about div.numeros{
+    display: flex;
+    gap: 25px;
+    text-align: center;
+}
+
+main section.about p.ano{
+    padding-top: 40px;
+    color: rgb(95, 93, 93);
+    padding-bottom: 30px;
+}
+
+main section.about p.ano span{
+    color: yellow;
+    padding-left: 30px;
+    font-size: .7em;
 }
