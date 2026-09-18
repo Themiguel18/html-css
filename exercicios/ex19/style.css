@@ -25,6 +25,8 @@ body, html{
 header{
     background-color: black;
     color: white;
+    position: fixed;
+    width: 100vw;
 }
 
 
@@ -50,6 +52,13 @@ header div.interface div.header{
     background-color: rgb(192, 192, 8);
     border: none;
     color: black;
+}
+
+.interface .header nav ul li button:hover{
+    background-color: black;
+    color: yellow;
+    border: 1px solid rgb(124, 118, 118);
+    transition: ease-in-out .5s;
 }
 
 /* main */
@@ -103,6 +112,13 @@ main section.about p.ano span{
 
 
 section.imagens {
+    border-bottom: 1px solid rgb(107, 106, 106);
+    padding-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+section.imagens div.interface{
     color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -116,6 +132,7 @@ section.imagens div.container div.foto1{
     padding: 200px 200px;
 
 }
+
 section.imagens div.container div.foto2{
     background-image: url(imagens/pexels-kadiremir-29505140.jpg);
     background-repeat: no-repeat;
@@ -123,6 +140,7 @@ section.imagens div.container div.foto2{
     padding: 200px 200px;
 
 }
+
 section.imagens div.container div.foto3{
     background-image: url(imagens/pexels-juanico-11553189.jpg);
     background-repeat: no-repeat;
@@ -130,6 +148,7 @@ section.imagens div.container div.foto3{
     padding: 200px 200px;
 
 }
+
 section.imagens div.container div.foto4{
     background-image: url(imagens/pexels-mikhail-nilov-7988086.jpg);
     background-repeat: no-repeat;
@@ -189,4 +208,6 @@ section.imagens div.container div.txt a{
     color: yellow;
     font-size: .7em;
 }
+
+
 
