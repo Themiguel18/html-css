@@ -104,10 +104,42 @@ main section.about p.ano span{
 
 section.imagens {
     color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+section.imagens div.container div.foto1{
+    background-image: url(imagens/pexels-adrinildennis-27873610.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 200px;
+
+}
+section.imagens div.container div.foto2{
+    background-image: url(imagens/pexels-kadiremir-29505140.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 200px;
+
+}
+section.imagens div.container div.foto3{
+    background-image: url(imagens/pexels-juanico-11553189.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 200px;
+
+}
+section.imagens div.container div.foto4{
+    background-image: url(imagens/pexels-mikhail-nilov-7988086.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 200px;
+
 }
 
 section.imagens div.container div.txt{
-    width: 300px;
+    
     border: 1px solid rgb(112, 110, 110);
     padding: 30px 30px;
     margin-bottom: 5px;
@@ -154,6 +186,7 @@ section.imagens div.container div.txt div.linguagens div{
 
 section.imagens div.container div.txt a{
     text-decoration: none;
-    color: black;
+    color: yellow;
+    font-size: .7em;
 }
 
